@@ -5,37 +5,6 @@
 # GEOFOX API VERSION 0.1 PRE-RELEASE
 # 
 ####################################################################################################
-#
-# Hereafter, GEOFOX GROUP refers to the developers of the GEOFOX service, applications, and related 
-# media as referenced below.
-#     Adam Budde (abudde@umich.edu)
-#     Russel Dekema (dekemar@umich.edu)
-#     Michael Billau (mbillau@umich.edu)
-#     Matthew Colf (mcolf@umich.edu)
-#     Michael Brown (mikegb@umich.edu)
-# 
-# GEOFOX GROUP CONFIDENTIAL
-# Unpublished Copyright (c) 2010 GEOFOX GROUP, All Rights Reserved.
-# 
-# NOTICE: All information contained herin is, and remains the property of GEOFOX GROUP. The 
-# intellectual and technical concepts contained heroin are proprietary to GEOFOX GROUP and may be 
-# covered by U.S. and Foreign Patents, patents in process, and are proteced by trade secret or 
-# copyright law. Dissemination of this information or reproduction of this material is strictly
-# forbudden unless priot written permission is obtained from all members of GEOFOX GROUP. Access to
-# the source code contained herein is herby forbidden to anyone except current GEOFOX GROUP 
-# members, managers, or contractors who have executed Confidentiality and Non-disclosure agreements
-# explicitly coversing such access. 
-#
-# The copyright notice above does not evidence any actual or intended publication or disclosure  of  
-# this source code, which includes information that is confidential and/or proprietary, and is a 
-# trade secret, of the GEOFOX GROUP. ANY REPRODUCTION, MODIFICATION, DISTRIBUTION, PUBLIC 
-# PERFORMANCE, OR PUBLIC DISPLAY OF OR THROUGH USE OF THIS SOURCE CODE WITHOUT THE EXPRESS WRITTEN
-# CONSENT OF THE GEOFOX GROUP IS STRICTLY PROHIBITED, AND IN VIOLATION OF APPLICABLE LAWS AND 
-# INTERNATIONAL TREATIES. THE RECEIPT OR POSSESSION OF THIS SOURCE CODE AND/OR RELATED INFORMATION
-# DOES NOT CONVEY OR IMPLY ANY RIGHTS TO REPRODUCE, DISCLOSE OR DISTRIBUTE ITS CONTENTS, OR TO 
-# MANUFACTURE, USE, OR SELL ANYTHING THAT IT MAY DESCRIBE, IN WHOLE OR IN PART.
-#
-####################################################################################################
 
 // Here, and forever more, a tab is 4 spaces, as God intended.
 
