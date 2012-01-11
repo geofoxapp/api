@@ -111,141 +111,114 @@ Available Methods
 
 S = string, I = int, B = boolean, F = float
 
-=== PUBLIC METHODS ===
+**PUBLIC METHODS**
 
--	login	
-					
+-	login						
 	```
-	{(S)email,(S)password}
-	=>{(S)auth_key|(B)false}
-	```		
-	
-- 	user_create		
-			
+	{(S)email,(S)password} => {(S)auth_key|(B)false}
+	```			
+- 	user_create					
 	```
-	{(S)password,(S)fname,(S)lname,(S)email,(S)phone}
-	=>{(I)user_id|null}
-	```				
-	
-- 	password_reset		
-		
+	{(S)password,(S)fname,(S)lname,(S)email,(S)phone} => {(I)user_id|null}
+	```			
+- 	password_reset				
 	```
-	{(S)email}
-	=>{(B)true|null}
+	{(S)email} => {(B)true|null}
 	```
 	
-=== SECURE METHODS ===
+**SECURE METHODS**
 
 - 	user_details				
 	```
-	{(S)auth_key}
-	=>{(I)user_id,(S)fname,(S)lname,(S)email,(S)phone,(B)email_valid|null}
+	{(S)auth_key} => {(I)user_id,(S)fname,(S)lname,(S)email,(S)phone,(B)email_valid|null}
 	```							
 - 	user_update					
 	```
-	{(S)auth_key,(S)password,(S)fname,(S)lname,(S)email,(S)phone}
-	=>{(B)true|null}
+	{(S)auth_key,(S)password,(S)fname,(S)lname,(S)email,(S)phone} => {(B)true|null}
 	```							
 - 	email_verify				
 	```
-	{(S)auth_key}
-	=>{(B)true|null}
+	{(S)auth_key} => {(B)true|null}
 	```							
 - 	email_confirm				
 	```
-	{(S)auth_key,(S)code}
-	=>{(B)true|null}
+	{(S)auth_key,(S)code} => {(B)true|null}
 	```
 - 	place_search_near			
 	```
-	{(S)auth_key,(F)lat,(F)lon}
-	=>{[][---business information---]|null}
+	{(S)auth_key,(F)lat,(F)lon} => {[][---business information---]|null}
 	```
 - 	place_search_category		
 	```
-	{(S)auth_key,(F)lat,(F)lon,(S)category}
-	=>{[][---business information---]|null}
+	{(S)auth_key,(F)lat,(F)lon,(S)category}	=> {[][---business information---]|null}
 	```
 - 	place_search_neighborhood	
 	```
-	{(S)auth_key,(F)lat,(F)lon}
-	=>{[(S)category][---business information---]|null}
+	{(S)auth_key,(F)lat,(F)lon}	=> {[(S)category][---business information---]|null}
 	```
 - 	place_get_details			
 	```
-	{(S)auth_key,(S)place_id}
-	=>{[---business information---]|null}
+	{(S)auth_key,(S)place_id} => {[---business information---]|null}
 	```							
 - 	place_get_details_live		
 	```
-	{(S)auth_key,(S)place_id}
-	=>{[---business information---]|null}
+	{(S)auth_key,(S)place_id} => {[---business information---]|null}
 	```
 - 	place_more_like				
 	```
-	{(S)auth_key,(S)place_id}
-	=>{[][---business information---]|null}
+	{(S)auth_key,(S)place_id} => {[][---business information---]|null}
 	```
 - 	place_more_near				
 	```
-	{(S)auth_key,(S)place_id}
-	=>{[][---business information---]|null}
+	{(S)auth_key,(S)place_id} => {[][---business information---]|null}
 	```
 - 	place_categories_get_all	
 	```
-	{(S)auth_key}
-	=>{[[(S)short][(S)long]]|null}
+	{(S)auth_key} => {[[(S)short][(S)long]]|null}
 	```
 - 	place_categories_get_short	
 	```
-	{(S)auth_key,(S)long}
-	=>{(S)short|null}
+	{(S)auth_key,(S)long} => {(S)short|null}
 	```
 - 	place_categories_get_long	
 	```
-	{(S)auth_key,(S)short}
-	=>{(S)long|null}
+	{(S)auth_key,(S)short} => {(S)long|null}
 	```
 - 	checkin_add					
 	```
-	{(S)auth_key,(S)place_id,(S)note}
-	=>{(I)checkin_id|null}
+	{(S)auth_key,(S)place_id,(S)note} => {(I)checkin_id|null}
 	```
 - 	checkin_remove				
 	```
-	{(S)auth_key,(I)checkin_id}
-	=>{(B)true|null}
+	{(S)auth_key,(I)checkin_id} => {(B)true|null}
 	```
 - 	checkin_history				
 	```
-	{(S)auth_key}
-	=>{[(I)checkin_id,(S)note,(I)timestamp,(S)place_id,(S)place_name]|null}
+	{(S)auth_key} => {[(I)checkin_id,(S)note,(I)timestamp,(S)place_id,(S)place_name]|null}
 	```
 - 	checkin_history_date		
 	```
-	{(S)auth_key,(I)date_start,(I)date_end}
-	=>{[(I)checkin_id,(S)note,(I)timestamp,(S)place_id,(S)place_name]|null}
+	{(S)auth_key,(I)date_start,(I)date_end} => {[(I)checkin_id,(S)note,(I)timestamp,(S)place_id,(S)place_name]|null}
 	```							
 - 	rec_get_all					
 	```
-	{(S)auth_key}
-	=>{[][---business information---]|null}
+	{(S)auth_key} => {[][---business information---]|null}
 	```
 
 Error Codes
 -----------
 
-=== SUCCESS STATES (0000-0099) [no problem here]
+**SUCCESS STATES** (0000-0099) [no problem here]
 -	0 - Success. No errors encountered.
 
-=== NOTICE STATUS (0100-0199) [no problems, but with additional information]
+**NOTICE STATUS** (0100-0199) [no problems, but with additional information]
 -	100 - I was supposed to tell you something, but I forgot.
 
-=== SERVICE ERROR STATUS (0200-0299) [it's my fault]
+**SERVICE ERROR STATUS** (0200-0299) [it's my fault]
 -	200 - An unknown service error has occurred.
 -	201 - An internal database error has occurred.
 
-=== INPUT ERRORS (0300-0399) [it's your fault]
+**INPUT ERRORS** (0300-0399) [it's your fault]
 -	300 - An unknown input error has occurred.
 -	301 - Missing a required parameter. Check your syntax.
 -	302 - Problem with one or more parameters. Check your data.
@@ -256,7 +229,7 @@ Error Codes
 -	307 - Access is denied. Your use of this service has been restricted. Please contact support.
 -	308 - Bad password email combination.
 
-=== THIRD PARTY PROBLEMS (0400-0499) [it's ____'s fault]
+**THIRD PARTY PROBLEMS** (0400-0499) [it's ____'s fault]
 -	400 - An unknown third party error has occurred.
 	
 Legal
