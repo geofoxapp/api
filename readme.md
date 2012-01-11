@@ -111,25 +111,30 @@ Available Methods
 
 S = string, I = int, B = boolean, F = float
 
-=== PUBLIC METHODS
+=== PUBLIC METHODS ===
 
--	login						
+-	login	
+					
 	```
 	{(S)email,(S)password}
 	=>{(S)auth_key|(B)false}
-	```							
-- 	user_create					
+	```		
+	
+- 	user_create		
+			
 	```
 	{(S)password,(S)fname,(S)lname,(S)email,(S)phone}
 	=>{(I)user_id|null}
-	```							
-- 	password_reset				
+	```				
+	
+- 	password_reset		
+		
 	```
 	{(S)email}
 	=>{(B)true|null}
 	```
 	
-=== SECURE METHODS
+=== SECURE METHODS ===
 
 - 	user_details				
 	```
