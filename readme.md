@@ -209,16 +209,20 @@ Error Codes
 -----------
 
 **SUCCESS STATES** (0000-0099) [no problem here]
+
 -	0 - Success. No errors encountered.
 
 **NOTICE STATUS** (0100-0199) [no problems, but with additional information]
+
 -	100 - I was supposed to tell you something, but I forgot.
 
 **SERVICE ERROR STATUS** (0200-0299) [it's my fault]
+
 -	200 - An unknown service error has occurred.
 -	201 - An internal database error has occurred.
 
 **INPUT ERRORS** (0300-0399) [it's your fault]
+
 -	300 - An unknown input error has occurred.
 -	301 - Missing a required parameter. Check your syntax.
 -	302 - Problem with one or more parameters. Check your data.
@@ -230,6 +234,7 @@ Error Codes
 -	308 - Bad password email combination.
 
 **THIRD PARTY PROBLEMS** (0400-0499) [it's ____'s fault]
+
 -	400 - An unknown third party error has occurred.
 	
 Legal
